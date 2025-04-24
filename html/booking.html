@@ -133,46 +133,60 @@
             <form action="post">
               <fieldset>
                 <legend>Personalia</legend>
-                <label for="name">Full name: <input type="text" /></label>
-                <label for="email"
-                  >Email:<input type="email" name="email" id="email" />
-                </label>
+                <div>
+                  <label for="name">Full name:</label>
+                  <input required type="text" id="name" name="name" />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input required type="email" name="email" id="email" />
+                </div>
               </fieldset>
+
               <fieldset>
-                <legend>Participants</legend>
-                <label for="email">Number:</label>
-                <select id="participants">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <label for="workshopSelection">Workshop:</label>
-                <select id="workshopSelection">
-                  <option selected disabled value=""></option>
-                  <option value="kids">Kid's Craft</option>
-                  <option value="family-workshop">Family Workshop</option>
-                  <option value="adults-only">Adults Only</option>
-                  <option disabled value="season-specials">
-                    Season Special
-                  </option>
-                </select>
-                <label for="class">Classes:</label>
-                <select id="classSelection">
-                  <option selected disabled value=""></option>
-                  <option value="mosiac-art">Mosiac Art</option>
-                  <option value="watercoloring-painting">
-                    Watercoloring Painting
-                  </option>
-                  <option value="canvas-painting">Canvas Painting</option>
-                </select>
+                <legend>Attendees</legend>
+                <div>
+                  <label for="attendees">Number:</label>
+                  <select required id="attendees" name="attendees">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="workshopSelection">Workshop:</label>
+                  <select required id="workshopSelection" name="workshop">
+                    <option selected disabled value=""></option>
+                    <option value="kids-workshop">Kids workshop</option>
+                    <option value="family-workshop">Family workshop</option>
+                    <option value="adults-only">Adults workshop</option>
+                    <option disabled value="season-specials">
+                      Season Special
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="classSelection">Classes:</label>
+                  <select id="classSelection" name="class">
+                    <option selected disabled value=""></option>
+                    <option value="mosiac-art">Mosiac Art</option>
+                    <option value="watercoloring-painting">
+                      Watercoloring Painting
+                    </option>
+                    <option value="canvas-painting">Canvas Painting</option>
+                  </select>
+                </div>
               </fieldset>
+
               <fieldset>
                 <legend>Anything to add?</legend>
                 <textarea
@@ -182,12 +196,18 @@
                   placeholder="Write anything such as questions or inquiries!"
                 ></textarea>
               </fieldset>
+              <input type="button" value="Submit" />
             </form>
           </div>
           <div class="column">
-            <form action="post">
-              <legend>Let's make som art!</legend>
-            </form>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=17ffb5a36653104836ecbbfcffc75969322e7ddce3b924f8fe65e1e78b530953%40group.calendar.google.com&ctz=Europe%2FOslo"
+              style="border: 0"
+              width="600"
+              height="350"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
           </div>
         </div>
       </section>
