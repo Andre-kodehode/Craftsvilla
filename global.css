@@ -27,7 +27,7 @@ p {
 /* Header styling */
 
 header {
-  background-color: var(--peachlight);
+  background-color: var(--dairycream);
   padding: 10px 30px;
   display: flex;
   flex-wrap: wrap;
@@ -225,7 +225,7 @@ video {
 /* Footer styling*/
 
 footer {
-  background-color: var(--peachlight);
+  background-color: var(--dairycream);
 
   padding: 10px 30px;
   display: flex;
@@ -343,7 +343,7 @@ textarea {
 
 .gallery {
   padding: 20px;
-  background-color: var(--peachpuff);
+  background-color: var(--peachlight);
 }
 
 .gallery img {
@@ -357,3 +357,57 @@ textarea {
   padding: 20px;
   background-color: var(--rosebud);
 }
+
+
+/* Testimonals */
+
+.testimonal {
+  background-color: var(--rosebud);
+  padding: 20px 0;
+}
+
+.testimonal > p {
+  padding-bottom: 30px;
+}
+
+.testimonal .request {
+  padding: 20px;
+  background-color: var(--oasis);
+  border: 0.3px solid var(--cocoabean); 
+  border-radius: 30px;
+}
+
+.testimonal .attendees img {
+  border-radius: 25px;
+  padding: 10px;
+  object-fit: cover;
+  width: 125px;
+  height: auto;
+}
+
+.testimonal .attendees {
+  padding: 50px;
+  background-color: var(--oasis);
+  border-radius: 50px;
+}
+
+.attendees {
+  flex-direction: column;
+}
+
+.attendees > .column {
+display: flex;
+flex-direction: row;
+}
+
+.attendee-card {
+  height: 250px;
+  width: 250px;
+  margin: 10px 10px ;
+  border-radius: 25px;
+  background-color: var(--peachpuff);
+}
+
+
+
+
