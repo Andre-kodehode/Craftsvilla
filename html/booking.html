@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Craftsvilla: Booking</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            src="../images/logo.png"
+            alt="Craftsvilla logo"
+            srcset=""
+          />Craftsvilla</a
+        >
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="current" href="./booking.html">Booking</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./testimonals.html">Testimonials</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+        </ul>
+      </nav>
+
+      <nav class="right-nav" aria-label="Tools">
+        <ul class="navbar right-navbar">
+          <li id="newsletter">
+            <a href="#">
+              <img src="../images/icons/email.png" alt="Email icon" />Newsletter
+            </a>
+          </li>
+          <li id="english">
+            <a href="#">
+              <img
+                src="../images/icons/language.png"
+                alt="Language icon"
+              />English
+            </a>
+          </li>
+          <li id="search">
+            <a href="#">
+              <img src="../images/icons/search.png" alt="Search icon" />Search
+            </a>
+          </li>
+          <li id="light">
+            <a href="#">
+              <img src="../images/icons/light.png" alt="Light mode toggle" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="service-section center">
+        <h2>Services Offered</h2>
+        <p>
+          Choose the art activity that suits you or your family best – each kit
+          includes everything you need!
+        </p>
+        <h2>Current classes</h2>
+      </div>
+      <section class="center art-options">
+        <div class="columns">
+          <div class="classes">
+            <h3>Mosiac Art - 400 NOK</h3>
+            <p>Create beautiful mosaic patterns with colorful stones!</p>
+            <div class="columns">
+              <div class="description">
+                <p>Kit includes</p>
+                <ul>
+                  <li>Frames</li>
+                  <li>A4-size wooden board</li>
+                  <li>Small colored stones</li>
+                  <li>Craft glue</li>
+                </ul>
+              </div>
+              <img src="../images/MosiacArt.png" alt="" />
+            </div>
+          </div>
+          <div class="classes">
+            <h3>Watercoloring Painting - 200 NOK</h3>
+            <p>Perfect for calm, creative moments with flowing colors.</p>
+            <div class="columns">
+              <div class="description">
+                <p>Kit includes</p>
+                <ul>
+                  <li>Frame</li>
+                  <li>Watercolor paper with template</li>
+                  <li>Watercolor paints</li>
+                  <li>Brushes</li>
+                </ul>
+              </div>
+              <img src="../images/WatercolorPainting.png" alt="" />
+            </div>
+          </div>
+          <div class="classes">
+            <h3>Canvas Painting - 300 NOK</h3>
+            <p>
+              Play with bold colors on canvas – favorite class everyone likes
+            </p>
+            <div class="columns">
+              <div class="description">
+                <p>Kit includes</p>
+                <ul>
+                  <li>Frame</li>
+                  <li>Acrylic paper with template</li>
+                  <li>Acrylic paints</li>
+                  <li>Brushes</li>
+                </ul>
+              </div>
+              <img src="../images/CanvasPainting.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <h2>More arts forms coming soon!</h2>
+      </section>
+
+      <section class="center booking">
+        <h2>Ready to Create?</h2>
+
+        <div class="columns center">
+          <div class="column">
+            <h3>Let's Make Some Art Together!</h3>
+            <p>
+              Choose your activity and your time below - we'll care of the rest.
+            </p>
+            <form action="post">
+              <fieldset>
+                <legend>Personalia</legend>
+                <label for="name">Full name: <input type="text" /></label>
+                <label for="email"
+                  >Email:<input type="email" name="email" id="email" />
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Participants</legend>
+                <label for="email">Number:</label>
+                <select id="participants">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="workshopSelection">Workshop:</label>
+                <select id="workshopSelection">
+                  <option selected disabled value=""></option>
+                  <option value="kids">Kid's Craft</option>
+                  <option value="family-workshop">Family Workshop</option>
+                  <option value="adults-only">Adults Only</option>
+                  <option disabled value="season-specials">
+                    Season Special
+                  </option>
+                </select>
+                <label for="class">Classes:</label>
+                <select id="classSelection">
+                  <option selected disabled value=""></option>
+                  <option value="mosiac-art">Mosiac Art</option>
+                  <option value="watercoloring-painting">
+                    Watercoloring Painting
+                  </option>
+                  <option value="canvas-painting">Canvas Painting</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Anything to add?</legend>
+                <textarea
+                  id="note"
+                  rows="5"
+                  cols="50"
+                  placeholder="Write anything such as questions or inquiries!"
+                ></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="column">
+            <form action="post">
+              <legend>Let's make som art!</legend>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="tel:+4791234567" aria-label="Phone number to Craftsvilla">
+            <img src="../images/icons/phone.png" alt="Phone icon" />+47 912 34
+            567
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:contact@craftsvilla.no"
+            aria-label="Craftsvilla phone number"
+          >
+            <img
+              src="../images/icons/email.png"
+              alt="Email icon"
+            />contact@craftsvilla.no
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com"
+            aria-label="Craftsvilla instagram account"
+          >
+            <img src="../images/icons/instagram.png" alt="Instagram icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+            aria-label="Craftsvilla facebook account"
+          >
+            <img src="../images/icons/facebook.png" alt="Facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com"
+            aria-label="Craftsvilla twitter account"
+          >
+            <img src="../images/icons/twitter.png" alt="Twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Craftsvilla copyright">
+            © 2025 Craftsvilla
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script src="../app.js"></script>
+</html>

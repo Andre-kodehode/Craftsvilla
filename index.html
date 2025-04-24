@@ -11,20 +11,24 @@
     <header>
       <div class="logo">
         <a href="./index.html"
-          ><img src="./images/logo.png" alt="" srcset="" />Craftsvilla</a
+          ><img
+            src="./images/logo.png"
+            alt="Craftsvilla logo"
+            srcset=""
+          />Craftsvilla</a
         >
       </div>
-      <nav>
+      <nav class="main-nav" aria-label="Main navigation">
         <ul class="navbar">
-          <li id="home"><a class="current" href="./index.html">Home</a></li>
-          <li id="booking"><a href="#">Booking</a></li>
-          <li id="gallery"><a href="#">Gallery</a></li>
-          <li id="testimonials"><a href="#">Testimonials</a></li>
-          <li id="about-us"><a href="#">About us</a></li>
+          <li><a class="current" href="./index.html">Home</a></li>
+          <li><a href="./html/booking.html">Booking</a></li>
+          <li><a href="./html/gallery.html">Gallery</a></li>
+          <li><a href="./html/testimonals.html">Testimonials</a></li>
+          <li><a href="./html/about-us.html">About us</a></li>
         </ul>
       </nav>
 
-      <nav class="right-container">
+      <nav class="right-nav" aria-label="Tools">
         <ul class="navbar right-navbar">
           <li id="newsletter">
             <a href="#">
@@ -75,9 +79,9 @@
 
         <h2>Creative Fun for Kids, Families & Adults</h2>
 
-        <div class="info-columns">
+        <div class="columns">
           <button class="info-column kids-craft">
-            <h3>%#;Kid's Craft</h3>
+            <h3>&#129490;Kid's Craft</h3>
             <p>Paper fun, clay and painting</p>
           </button>
           <button class="info-column family-workshop">
@@ -95,14 +99,84 @@
         </div>
       </div>
       <div class="video-section center">
-        <h2>A Glimpse Inside Craftsvilla</h2>
+        <h2 id="title">A Glimpse Inside Craftsvilla</h2>
+        <video
+          src="./Craftsvilla.webm"
+          type="video/webm"
+          controls="play pause volume"
+          playonscroll
+        ></video>
       </div>
 
-      <div class="snippet-gallery">
-        <h2>Gallery from 2024</h2>
+      <div class="snippet-gallery center">
+        <h2 id="title">Gallery from 2024</h2>
+
+        <div class="columns">
+          <div class="column">
+            <img src="./images/Art1.png" alt="" srcset="" />
+          </div>
+          <div class="column">
+            <img src="./images/Art2.png" alt="" srcset="" />
+          </div>
+          <div class="column">
+            <img src="./images/Art3.png" alt="" srcset="" />
+          </div>
+          <div class="column">
+            <img src="./images/Art4.png" alt="" srcset="" />
+          </div>
+        </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>
+          <a href="tel:+4791234567" aria-label="Phone number to Craftsvilla">
+            <img src="./images/icons/phone.png" alt="Phone icon" />+47 912 34
+            567
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:contact@craftsvilla.no"
+            aria-label="Craftsvilla phone number"
+          >
+            <img
+              src="./images/icons/email.png"
+              alt="Email icon"
+            />contact@craftsvilla.no
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com"
+            aria-label="Craftsvilla instagram account"
+          >
+            <img src="./images/icons/instagram.png" alt="Instagram icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com"
+            aria-label="Craftsvilla facebook account"
+          >
+            <img src="./images/icons/facebook.png" alt="Facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com"
+            aria-label="Craftsvilla twitter account"
+          >
+            <img src="./images/icons/twitter.png" alt="Twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Craftsvilla copyright">
+            © 2025 Craftsvilla
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 
   <script src="modules.js"></script>
