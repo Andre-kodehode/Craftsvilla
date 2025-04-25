@@ -358,7 +358,6 @@ textarea {
   background-color: var(--rosebud);
 }
 
-
 /* Testimonals */
 
 .testimonal {
@@ -373,7 +372,7 @@ textarea {
 .testimonal .request {
   padding: 20px;
   background-color: var(--oasis);
-  border: 0.3px solid var(--cocoabean); 
+  border: 0.3px solid var(--cocoabean);
   border-radius: 30px;
 }
 
@@ -396,18 +395,54 @@ textarea {
 }
 
 .attendees > .column {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .attendee-card {
   height: 250px;
   width: 250px;
-  margin: 10px 10px ;
+  margin: 10px 10px;
   border-radius: 25px;
   background-color: var(--peachpuff);
 }
 
+/* About us webpage */
 
+.about-us {
+  background-color: var(--oasis);
+  padding: 20px 0;
+}
 
+.about-us > p {
+  padding: 0 400px;
+  margin-bottom: 15px;
+}
 
+.vertical-columns {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.vertical-columns img {
+  border-radius: 50px;
+  height: 300px;
+  width: auto;
+}
+
+.vertical-columns > .column {
+  border-radius: 50px;
+  padding: 10px 10px 10px;
+  background-color: var(--butterscotch);
+  height: auto;
+  width: 500px;
+}
+
+.vertical-columns > .column p {
+  font-style: italic;
+  padding: 0 10px;
+}
