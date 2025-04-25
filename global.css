@@ -24,6 +24,76 @@ p {
   font-size: 18px;
 }
 
+/* Newsletter popup styling*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Button styling */
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--wine);
+  color: var(--dairycream);
+  border: 2px solid #9e5659;
+  font-size: 18px;
+  text-shadow: 1px 1px 0px #a67c52;
+  box-shadow: 2px 2px 0px #a67c52;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--cocoabean);
+  color: var(--dairycream);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.5); /* An inset shadow for a pressed effect */
+  transform: translateY(2px); /* Moves the button down to simulate a press */
+}
+
 /* Header styling */
 
 header {
@@ -98,46 +168,24 @@ ul > li > a > img {
 /* Hero section */
 
 .hero-section {
-  padding: 20px 0 50px 50px;
+  background-image: url(./images/Hero-page.png);
+  background-size: contain; /* Ensure the image fits without being cropped */
   background-color: var(--oasis);
-  color: var(--wine);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0 50px 50px;
+  height: 80vh;
+  width: auto;
 }
 
-.h1-pad {
-  padding: 0 0 0 15px;
+.hero-section .button {
+  position: absolute;
+  top: 580px; /* Position 20px from the bottom of the section */
+  left: 30%; /* Position horizontally at the center */
+  transform: translateX(-50%); /* Centers the button precisely */
+  font-size: 20px;
 }
 
-.hero-section > p:first-of-type {
-  padding: 10px 0 0 0;
-}
-
-.hero-section > p:last-of-type {
-  padding: 0 0 20px 0;
-}
-
-.booking-button {
-  padding: 10px 20px;
-  background-color: var(--wine);
-  color: var(--dairycream);
-  border: 2px solid #9e5659;
-  font-size: 18px;
-  text-shadow: 1px 1px 0px #a67c52;
-  box-shadow: 2px 2px 0px #a67c52;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.booking-button:hover {
-  background-color: var(--cocoabean);
-  color: var(--dairycream);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.booking-button:active {
-  box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.5); /* An inset shadow for a pressed effect */
-  transform: translateY(2px); /* Moves the button down to simulate a press */
-}
 
 /* Info section */
 
@@ -370,6 +418,7 @@ textarea {
 }
 
 .testimonal .request {
+  font-size: 2rem;
   padding: 20px;
   background-color: var(--oasis);
   border: 0.3px solid var(--cocoabean);
@@ -445,4 +494,18 @@ textarea {
 .vertical-columns > .column p {
   font-style: italic;
   padding: 0 10px;
+}
+
+
+/* Dark Mode */
+
+#default.dark * {
+  background-color: black !important;
+  color: whitesmoke !important;
+  border-color: whitesmoke !important;
+}
+
+/* Optional: images stay the same, override only text/backgrounds */
+#default.dark img {
+  filter: brightness(0.9);
 }

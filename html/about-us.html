@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="../global.css" />
     <title>Craftsvilla: About us</title>
   </head>
-  <body>
+  <body id="default">
     <header>
       <div class="logo">
         <a href="../index.html"
           ><img
             src="../images/logo.png"
             alt="Craftsvilla logo"
-            srcset=""
-          />Craftsvilla</a
+            srcset="" />Craftsvilla</a
         >
       </div>
       <nav class="main-nav" aria-label="Main navigation">
@@ -32,26 +31,43 @@
         <ul class="navbar right-navbar">
           <li id="newsletter">
             <a href="#">
-              <img src="../images/icons/email.png" alt="Email icon" />Newsletter
+              <img
+                class="mode-img"
+                src="../images/icons/email-light.png"
+                alt="Email icon"
+                data-light="../images/icons/email-light.png"
+                data-dark="../images/icons/email-dark.png" />Newsletter
             </a>
           </li>
           <li id="english">
             <a href="#">
               <img
-                src="../images/icons/language.png"
-                alt="Language icon"
-              />English
+                class="mode-img"
+                src="../images/icons/language-light.png"
+                data-light="../images/icons/language-light.png"
+                data-dark="../images/icons/language-dark.png"
+                alt="Language icon" />English
             </a>
           </li>
           <li id="search">
             <a href="#">
-              <img src="../images/icons/search.png" alt="Search icon" />Search
+              <img
+                class="mode-img"
+                src="../images/icons/search-light.png"
+                alt="Search icon"
+                data-light="../images/icons/search-light.png"
+                data-dark="../images/icons/search-dark.png" />Search
             </a>
           </li>
-          <li id="light">
-            <a href="#">
-              <img src="../images/icons/light.png" alt="Light mode toggle" />
-            </a>
+          <li>
+            <a id="lightMode" aria-label="Toggle Theme">
+              <img
+                class="mode-img"
+                src="../images/icons/light.png"
+                data-light="../images/icons/light.png"
+                data-dark="../images/icons/moon.png"
+                alt="Light logo"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -95,47 +111,64 @@
         </div>
       </section>
     </main>
-    <footer>
-      <ul>
+    <footer class="main-nav">
+      <ul class="navbar">
         <li>
           <a href="tel:+4791234567" aria-label="Phone number to Craftsvilla">
-            <img src="../images/icons/phone.png" alt="Phone icon" />+47 912 34
-            567
+            <img
+              class="mode-img"
+              src="../images/icons/phone-light.png"
+              alt="Phone icon"
+              data-light="../images/icons/phone-light.png"
+              data-dark="../images/icons/phone-dark.png" />+47 912 34 567
           </a>
         </li>
         <li>
           <a
             href="mailto:contact@craftsvilla.no"
-            aria-label="Craftsvilla phone number"
-          >
+            aria-label="Craftsvilla phone number">
             <img
-              src="../images/icons/email.png"
-              alt="Email icon"
-            />contact@craftsvilla.no
+              class="mode-img"
+              src="../images/icons/email-light.png"
+              data-light="../images/icons/email-light.png"
+              data-dark="../images/icons/email-dark.png"
+              alt="Email icon" />contact@craftsvilla.no
           </a>
         </li>
         <li>
           <a
             href="https://www.instagram.com"
-            aria-label="Craftsvilla instagram account"
-          >
-            <img src="../images/icons/instagram.png" alt="Instagram icon" />
+            aria-label="Craftsvilla instagram account">
+            <img
+              class="mode-img"
+              src="../images/icons/instagram-light.png"
+              alt="Instagram icon"
+              data-light="../images/icons/instagram-light.png"
+              data-dark="../images/icons/instagram-dark.png" />
           </a>
         </li>
         <li>
           <a
             href="https://www.facebook.com"
-            aria-label="Craftsvilla facebook account"
-          >
-            <img src="../images/icons/facebook.png" alt="Facebook icon" />
+            aria-label="Craftsvilla facebook account">
+            <img
+              class="mode-img"
+              src="../images/icons/facebook-light.png"
+              alt="Facebook icon"
+              data-light="../images/icons/facebook-light.png"
+              data-dark="../images/icons/facebook-dark.png" />
           </a>
         </li>
         <li>
           <a
             href="https://www.twitter.com"
-            aria-label="Craftsvilla twitter account"
-          >
-            <img src="../images/icons/twitter.png" alt="Twitter icon" />
+            aria-label="Craftsvilla twitter account">
+            <img
+              class="mode-img"
+              src="../images/icons/twitter-light.png"
+              alt="Twitter icon"
+              data-light="../images/icons/twitter-light.png"
+              data-dark="../images/icons/twitter-dark.png" />
           </a>
         </li>
         <li>
