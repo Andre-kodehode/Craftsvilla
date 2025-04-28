@@ -55,7 +55,6 @@ p {
   font-size: 16px;
 }
 
-
 .hidden {
   display: none;
 }
@@ -180,12 +179,11 @@ ul > li > a > img {
 
 .hero-section .button {
   position: absolute;
-  top: 580px; /* Position 20px from the bottom of the section */
-  left: 30%; /* Position horizontally at the center */
+  top: 460px; /* Position 20px from the bottom of the section */
+  left: 32%; /* Position horizontally at the center */
   transform: translateX(-50%); /* Centers the button precisely */
-  font-size: 20px;
+  font-size: 18px;
 }
-
 
 /* Info section */
 
@@ -495,7 +493,6 @@ textarea {
   font-style: italic;
   padding: 0 10px;
 }
-
 
 /* Dark Mode */
 
