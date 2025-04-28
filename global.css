@@ -506,3 +506,8 @@ textarea {
 #default.dark img {
   filter: brightness(0.9);
 }
+
+#lightMode:hover {
+  cursor: grab;
+  transform: scale(1.3);
+}
